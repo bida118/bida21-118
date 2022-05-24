@@ -1,0 +1,144 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style> 
+
+.tab {
+  overflow: hidden;
+  background-color: black;
+}
+
+
+.tab a {
+  float: left;
+  color: white;
+  padding: 15;
+  text-decoration: none;
+  font-size: 25px;
+  text-align: centre;
+  width: 20%;
+}
+
+.dropdown {
+  overflow: hidden;
+  text-align: centre;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;  
+  background-color: black;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 15x;
+  text-align: centre;
+  text-decoration: none;
+  width: 20%
+}
+
+.tab a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+h1 {
+  color: white;
+  text-align: center;
+  text-size:30px;
+  font-family: monospace;
+  letter-spacing: 2px;
+} 
+.mySlides {
+  display: none;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+</style>
+</head>
+
+<body class="HOME">
+<body class="POPULAR">
+<body class="COMING SOON">
+<body class="CONTACT US">
+<body class="MOVIE GENRE">
+<div>
+ <div class="tab">
+  <a target="_blank" href=index.html>HOME</a>
+  <a target="_blank" href=Popular.html>POPULAR</a>
+  <a target="_blank" href=Coming.html>COMING SOON</a>
+  <a target="_blank" href=Contact.html>CONTACT US</a>
+  <div class="dropdown">
+   <button class="dropbtn">MOVIE GENRE
+     <i class="fa fa-caret-down"></i>
+   </button>
+   <div class="dropdown-content">
+     <a href=Comedy.html>Comedy</a>
+        <a href=Action.html>Action</a>
+        <a href=Romance.html>Romance</a>
+        <a href=Horror.html>Horror</a>
+        <a href=Sci-fi.html>Sci-Fi</a>
+    </div>
+  </div>
+</div>
+
+<h1>COMING SOON</h1>
+
+ <div >
+  <img class="mySlides" src="img/girls.jpeg" "width="120%" length="800px">
+  <img class="mySlides" src="img/pitch.jpeg" "width="120%" length="800px">
+  <img class="mySlides" src="img/The Hate.jpeg" "width="120%" length="800px">
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // 
+}
+</script>
+
+
+<body bgcolor="black">
+<hr>
+
+<footer>
+Copyright &copy;  BGM MOVIE THEATRE 2022
+</footer>
+
+</body>
+</html>

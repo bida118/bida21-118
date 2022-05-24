@@ -1,0 +1,180 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style> 
+
+.tab {
+  overflow: hidden;
+  background-color: black;
+}
+
+
+.tab a {
+  float: left;
+  color: white;
+  padding: 15;
+  text-decoration: none;
+  font-size: 25px;
+  text-align: centre;
+  width: 20%;
+}
+
+.dropdown {
+  overflow: hidden;
+  text-align: centre;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;  
+  background-color: black;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 15x;
+  text-align: centre;
+  text-decoration: none;
+  width: 20%
+}
+
+.tab a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  text-size:30px;
+  font-family: monospace;
+  letter-spacing: 2px;
+ }
+.container {
+  position: relative;
+  width: 350px;
+  height:440px;
+  max-width: 300px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 400px;
+  height:325px;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 15px;
+  padding: 35px;
+  text-align: center;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+.grid-container {
+  display: grid;
+  height: 900px;
+  width: 1400px;
+  grid-template-columns: auto auto auto;
+  background-color:black;
+  padding: 5px;
+}
+
+.grid-container > div {
+  background-color: black;
+}
+</style>
+<div class="tab">
+  <a target="_blank" href=index.html>HOME</a>
+  <a target="_blank" href=Popular.html>POPULAR</a>
+  <a target="_blank" href=Coming.html>COMING SOON</a>
+  <a target="_blank" href=Contact.html>CONTACT US</a>
+  <div class="dropdown">
+   <button class="dropbtn">MOVIE GENRE
+     <i class="fa fa-caret-down"></i>
+   </button>
+   <div class="dropdown-content">
+     <a href=Comedy.html>Comedy</a>
+        <a href=Action.html>Action</a>
+        <a href=Romance.html>Romance</a>
+        <a href=Horror.html>Horror</a>
+        <a href=Sci-fi.html>Sci-Fi</a>
+   </div>
+  </div>
+</div>
+<h1>POPULAR</h1>
+<a href="default.asp">
+<div class="grid-container">
+ <div class="container">
+ <img src="img/black panther.jpeg" alt="Black Panther" width= "400" height= "370" >
+  <div class="overlay">Directed by Ryan Coogler<br>Written by:Ryan Coogler<br>Jack Kirby<br>Produced by:Kevin Feige<br>Starring:Chadwick Boseman,Michael B. Jordan,Lupita Nyong'o,Danai Gurira,Martin Freeman,Daniel Kaluuya,Letitia Wright,Winston Duke,Angela Bassett,Forest Whitaker,Andy Serkis<br>Music by:Ludwig Göransson<br>Production company:Marvel Studios<br>Release dates:February 16, 2018 (United States)<br>Running time:134 minutes<br>Country:United States<br>Language:English.
+  <p style="font-size:150% ;"> Showing:May 21-30</p>
+  </div>
+ </div>
+ <div class="container">
+  <img src="img/growish.jpeg" alt="Grownish" width= "400" height="370" > 
+  <div class="overlay">Genre:Teen sitcom,Comedy-drama<br>Created by:Kenya Barris<br>Starring:Yara Shahidi<br>Trevor Jackson<br>Francia Raisa<br>Emily Arlook<br>Jordan Buhat<br>Chris Parnell<br>Chloe Bailey<br>Halle Bailey<br>Luka Sabbat<br>Diggy Simmons<br>Marcus Scribner<br>Narrated by:Yara Shahidi<br>
+  <p style="font-size:150% ;"> Showing:May 21-30</p>
+   </div>
+  </div>
+ <div class="container">
+  <img src="img/harriet.jpeg" alt="Harriet" width= "400" height= "370" >
+  <div class="overlay">Genre:Teen sitcom,Comedy-drama<br>Created by:Kenya Barris<br>Starring:Yara Shahidi<br>Trevor Jackson<br>Francia Raisa<br>Emily Arlook<br>Jordan Buhat<br>Chris Parnell<br>Chloe Bailey<br>Halle Bailey<br>Luka Sabbat<br>Diggy Simmons<br>Marcus Scribner<br>Narrated by:Yara Shahidi<br>
+  <p style="font-size:150% ;"> Showing:May 21-30</p>
+  </div>
+ </div>
+ <div class="container">
+ <img src="img/oceans8.jpeg" alt="Oceans 8" width= "400" height= "370"> 
+ <div class="overlay">Directed:Gary Ross<br>Story by:Gary Ross<br>Produced by:Steven Soderbergh<br>Starring:Sandra Bullock,Cate Blanchett,Anne Hathaway,Mindy Kaling,Sarah Paulson,Awkwafina,Rihanna,Helena Bonham Carter<br>Edited by:Juliette Welfling<br>Music by:Daniel Pemberton<br>Distributed:Warner Bros. Pictures<br>Release date:June 8, 2018 (United States)<br>Running time:110 minutes<br>Country:United States<br>Language:English<br>
+ <p style="font-size:150% ;"> Showing:May 21-30</p>
+  </div>
+ </div>
+ <div class="container">
+ <img src="img/everything.jpeg" alt="Everything Everything" width= "400" height= "370"> 
+ <div class="overlay">Directed by:Stella Meghie<br>Produced :Leslie Morgenstein<br>Starring:Amandla Stenberg,Nick Robinson,Ana de la Reguera<br>Edited:Nancy Richardson<br<br>Release date:May 19, 2017 (United States)<br>Running time:96 minutes<br>Country:United States<br>Language:English<br>
+Eighteen-year-old Maddy (Amandla Stenberg) is being treated for SCID, an immune disorder that prevents her from leaving her home and interacting with others. Her mother, Pauline Whittier, takes care of her with the help of her nurse Carla, who has taken care of Madeline for 15 years. Pauline monitors her daughter's health status constantly and provides daily medication. Only Pauline, Carla and Carla's daughter, Rosa, are allowed in the home.  Maddy yearns to see the world, particularly the ocean.<br>
+ <p style="font-size:150% ;"> Showing:May 21-30</p> 
+  </div>
+ </div>
+ <div class="container">
+ <img src="img/riverdale.jpeg" alt="Riverdale" width= "400" height= "370" >
+  <div class="overlay">Genre:Teen drama,Mystery,Crime<br>Starring:KJ Apa,Lili Reinhart,Camila Mendes,Cole Sprouse,Mädchen Amick,Luke Perry,Mark Consuelos,Casey Cott,Skeet Ulrich,Charles Melton,Vanessa Morgan,Drew Ray Tanner,Erinn Westbrook<br>Narrated:Cole Sprouse
+  <br>Country of origin:United States<br>Original language:English<br> KJ Apa in the role of Archie Andrews, Lili Reinhart as Betty Cooper, Camila Mendes as Veronica Lodge, and Cole Sprouse as Jughead Jones, the series' narrator. After a teenager was murdered within the town of Riverdale, this group of teenagers try to unravel the evils lurking within this seemingly innocent town.<br>
+<p style="font-size:150% ;"> Showing:May 21-30</p>
+  </div>
+ </div>
+</div>
+<body bgcolor="black">
+<hr>
+<footer>
+Copyright &copy;  BGM MOVIE THEATRE  2022
+</footer>
+
+</body>
+</html>
